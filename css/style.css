@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Minecraft-Regular';
+    src:url('../font/Minecraft-Regular.ttf.woff') format('woff'),
+        url('../font/Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
+        url('../font/Minecraft-Regular.ttf.eot'),
+        url('../font/Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2799ff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100vh;
+  font-family: 'Minecraft-Regular', serif;
+  background-color: #477A1E;
+  margin: 0;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec {
+  color: #000000;
+  padding: 1vw 3vw;
+  text-align: center;
+}
+
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num {
+  display: block;
+  font-size: 8vw;
+  line-height: 1em;
+}
+
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word {
+  display: block;
+  font-size: 2vw;
+  color: #8a99ab;
+}
